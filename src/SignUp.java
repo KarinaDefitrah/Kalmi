@@ -414,7 +414,7 @@ public class SignUp extends javax.swing.JFrame {
                }catch(SQLException ex) {
                  JOptionPane.showMessageDialog(this, ex.getMessage());
                }
-               HitungBmi object = new HitungBmi();
+               Login object = new Login();
                object.setVisible(true);
         }
       }

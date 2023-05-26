@@ -254,6 +254,7 @@ public class Guest extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         jLabel4.setText("BMI");
 
+        indeksBmiGuest.setEditable(false);
         indeksBmiGuest.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 indeksBmiGuestActionPerformed(evt);

@@ -9,6 +9,7 @@
  */
 
 
+
 import bmicalculator.General;
 import bmicalculator.Pria;
 import bmicalculator.Wanita;
@@ -57,15 +58,19 @@ public class History extends javax.swing.JFrame {
         }
     }
     
+
  
     public History() {
         initComponents();
         new DisplayHistory();
+         //setDefaultCloseOperation(History.DISPOSE_ON_CLOSE);
         tampilTabel();
+   
         
-        HitungBmi muncul = new HitungBmi();
+    
       
     }
+    
     public void tampilTabel(){
        try {
     // Query untuk mengambil data dari data_registrasi
@@ -106,7 +111,7 @@ public class History extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         tabelHistory = new javax.swing.JTable();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         tabelHistory.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {

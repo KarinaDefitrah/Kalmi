@@ -444,8 +444,14 @@ public class HitungBmi extends javax.swing.JFrame{
         
         
         String kelamin = cekKelamin.getText();
-        String simpanNama = cekNama1.getText();
-     
+        final String simpanNama;
+        try{
+            simpanNama = cekNama1.getText();
+        } catch (Exception e){
+            
+        }
+        
+        
         if (kelamin.equalsIgnoreCase("Pria")){
                         user = new Pria();
                     } else{
@@ -528,10 +534,6 @@ public class HitungBmi extends javax.swing.JFrame{
                }catch(SQLException ex) {
                  JOptionPane.showMessageDialog(this, ex.getMessage());
                }
-    
-  
-
-   
     }//GEN-LAST:event_calculateActionPerformed
 
     private void indeksBmiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_indeksBmiActionPerformed
